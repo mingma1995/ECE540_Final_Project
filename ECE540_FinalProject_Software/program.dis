@@ -1,0 +1,1557 @@
+
+program.elf:     file format elf32-tradlittlemips
+
+SYMBOL TABLE:
+9fc00000 l    d  .bootrom	00000000 .bootrom
+80000000 l    d  .exception_vector	00000000 .exception_vector
+80000200 l    d  .text	00000000 .text
+800007b0 l    d  .data	00000000 .data
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .pdr	00000000 .pdr
+00000000 l    d  .gnu.attributes	00000000 .gnu.attributes
+00000000 l    df *ABS*	00000000 boot.o
+9fc00004 l       .bootrom	00000000 init_cp0
+9fc00018 l       .bootrom	00000000 init_tlb
+9fc00060 l       .bootrom	00000000 init_icache
+9fc00044 l       .bootrom	00000000 next_tlb_entry
+9fc000ac l       .bootrom	00000000 done_icache
+9fc0009c l       .bootrom	00000000 next_icache_tag
+9fc000ac l       .bootrom	00000000 enable_k0_cache
+9fc000cc l       .bootrom	00000000 init_dcache
+9fc0011c l       .bootrom	00000000 done_dcache
+9fc0010c l       .bootrom	00000000 next_dcache_tag
+9fc0013c l       .bootrom	00000000 all_done
+00000000 l    df *ABS*	00000000 exceptions.o
+80000000 l       .exception_vector	00000000 __tlb_refill_loop
+80000080 l       .exception_vector	00000000 __xtlb_refill_loop
+80000100 l       .exception_vector	00000000 __cache_error_loop
+80000180 l       .exception_vector	00000000 __general_exception_loop
+00000000 l    df *ABS*	00000000 main.o
+0000001d l       *ABS*	00000000 Keyboard_w
+0000001b l       *ABS*	00000000 Keyboard_s
+0000001c l       *ABS*	00000000 Keyboard_a
+00000023 l       *ABS*	00000000 Keyboard_d
+00000043 l       *ABS*	00000000 Keyboard_i
+00000042 l       *ABS*	00000000 Keyboard_k
+0000003b l       *ABS*	00000000 Keyboard_j
+0000004b l       *ABS*	00000000 Keyboard_l
+00000012 l       *ABS*	00000000 Keyboard_leftshift
+00000059 l       *ABS*	00000000 Keyboard_rightshift
+00000016 l       *ABS*	00000000 Keyboard_1
+0000001e l       *ABS*	00000000 Keyboard_2
+00000029 l       *ABS*	00000000 Keyboard_space
+00000007 l       *ABS*	00000000 MSKORIENT
+bf800008 l       *ABS*	00000000 PORT_KEYBOARD
+bf80000c l       *ABS*	00000000 PORT_BOTINFO
+bf800010 l       *ABS*	00000000 PORT_BOTCTRL
+bf800014 l       *ABS*	00000000 PORT_BOTUPDT
+bf800018 l       *ABS*	00000000 PORT_INTACK
+bf80001c l       *ABS*	00000000 PORT_BOTINFO_1
+bf800020 l       *ABS*	00000000 PORT_BOTCTRL_1
+bf800024 l       *ABS*	00000000 PORT_BOTUPDT_1
+bf800028 l       *ABS*	00000000 PORT_INTACK_1
+bf800038 l       *ABS*	00000000 PORT_BULLET
+bf80002c l       *ABS*	00000000 PORT_HIT
+bf800030 l       *ABS*	00000000 PORT_FRAME
+bf800034 l       *ABS*	00000000 PORT_HISTORY
+00000001 l       *ABS*	00000000 Screen_loading
+00000002 l       *ABS*	00000000 Screen_play
+00000004 l       *ABS*	00000000 Screen_green_win
+00000008 l       *ABS*	00000000 Screen_red_win
+00000010 l       *ABS*	00000000 Screen_history
+800007b0 l       .data	00000000 SP_SCREEN
+800007b1 l       .data	00000000 SP_GREEN_HITTED
+800007b2 l       .data	00000000 SP_RED_HITTED
+800007b3 l       .data	00000000 SP_GREEN_HITTED_TIME
+800007b4 l       .data	00000000 SP_RED_HITTED_TIME
+800007b5 l       .data	00000000 SP_GAME_1
+800007b6 l       .data	00000000 SP_GAME_2
+800007b7 l       .data	00000000 SP_GAME_3
+80000210 l       .text	00000000 main_1
+800004ac l       .text	00000000 Screen
+80000264 l       .text	00000000 check_tab_1
+80000358 l       .text	00000000 play_screen
+80000298 l       .text	00000000 check_tab_2
+800002c0 l       .text	00000000 check_tab_3
+80000374 l       .text	00000000 loop
+80000498 l       .text	00000000 Keyboard
+800002fc l       .text	00000000 j_screen_2
+80000310 l       .text	00000000 j_screen_5
+800002e8 l       .text	00000000 j_screen_1
+8000037c l       .text	00000000 Players_control
+8000036c l       .text	00000000 Check_Hitted
+800005d4 l       .text	00000000 GREEN_HITTED
+800003c4 l       .text	00000000 Player_1
+800003d4 l       .text	00000000 Player_1_next
+800004d4 l       .text	00000000 expect_orient_1
+8000052c l       .text	00000000 check_orient_1
+800003f4 l       .text	00000000 shot_1
+800003f8 l       .text	00000000 shot_1_next
+8000044c l       .text	00000000 Player_2
+80000460 l       .text	00000000 Player_2_next
+80000554 l       .text	00000000 expect_orient_2
+800005ac l       .text	00000000 check_orient_2
+80000480 l       .text	00000000 shot_2
+80000484 l       .text	00000000 shot_2_next
+800004c0 l       .text	00000000 HITTED
+8000050c l       .text	00000000 Up_1
+80000514 l       .text	00000000 Down_1
+8000051c l       .text	00000000 Left_1
+80000524 l       .text	00000000 Right_1
+8000054c l       .text	00000000 go_forward_1
+8000058c l       .text	00000000 Up_2
+80000594 l       .text	00000000 Down_2
+8000059c l       .text	00000000 Left_2
+800005a4 l       .text	00000000 Right_2
+800005cc l       .text	00000000 go_forward_2
+80000600 l       .text	00000000 ADD_GREEN_TIME
+80000640 l       .text	00000000 GREEN_BASE_HITTED
+800006f4 l       .text	00000000 win_red
+80000664 l       .text	00000000 RED_HITTED
+80000690 l       .text	00000000 ADD_RED_TIME
+800006d0 l       .text	00000000 RED_BASE_HITTED
+80000740 l       .text	00000000 win_green
+800007b0 g       .data	00000000 _fdata
+80000200  w    F .text	00000000 __exception_handle_verbose
+8000078c g       .text	00000000 _etext
+800087b8 g       *ABS*	00000000 _gp
+00000020 g       *ABS*	00000000 __isr_vec_space
+800007b8 g       .data	00000000 _bss_start
+00000000 g       *ABS*	00000000 __DYNAMIC
+00000001 g       *ABS*	00000000 __use_excpt_boot
+00000000  w      *UND*	00000000 _mips_xtlb_refill
+80000200  w    F .text	00000000 __register_excpt_boot
+80000200  w    F .text	00000000 __register_excpt_handler
+80000000 g       *ABS*	00000000 __app_start
+80000000 g       *ABS*	00000000 __flash_app_start
+80000200 g       .text	00000000 _ftext
+9fc00144 g     F .bootrom	0000006c _start
+80000000 g       *ABS*	00000000 __excpt_ebase
+80000204 g     O .text	00000000 main
+80000200 g     F .text	00000000 __exception_handle
+bfc00000 g       *ABS*	00000000 __entry
+80000200  w    F .text	00000004 __getargs
+00000000  w      *UND*	00000000 _mips_general_exception
+00000000  w      *UND*	00000000 _mips_tlb_refill
+00000000  w      *UND*	00000000 _mips_cache_error
+80040000 g       *ABS*	00000000 __stack
+80000000 g     F .exception_vector	00000198 __exception_entry
+80000000 g       .exception_vector	00000000 __base
+800007b8 g       .data	00000000 _edata
+bfc00000 g       *ABS*	00000000 __flash_start
+800007b8 g       .data	00000000 _end
+9fc00000 g     F .bootrom	00000144 __reset_vector
+0001f800 g       *ABS*	00000000 __memory_size
+800087b8 g       *ABS*	00000000 __global
+80000200  w    F .text	00000000 __isr_vec
+00000000 g       *ABS*	00000000 __isr_vec_count
+800007b8 g       .data	00000000 _fbss
+
+
+
+Disassembly of section .bootrom:
+
+9fc00000 <__reset_vector>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:20
+9fc00000:	40804800 	mtc0	zero,c0_count
+
+9fc00004 <init_cp0>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:27
+9fc00004:	3c030040 	lui	v1,0x40
+9fc00008:	34630004 	ori	v1,v1,0x4
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:28
+9fc0000c:	40836000 	mtc0	v1,c0_status
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:31
+9fc00010:	40806800 	mtc0	zero,c0_cause
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:34
+9fc00014:	40805800 	mtc0	zero,c0_compare
+
+9fc00018 <init_tlb>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:44
+9fc00018:	40038000 	mfc0	v1,c0_config
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:45
+9fc0001c:	7c6311c0 	ext	v1,v1,0x7,0x3
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:46
+9fc00020:	24070001 	li	a3,1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:47
+9fc00024:	1467000e 	bne	v1,a3,9fc00060 <init_icache>
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:50
+9fc00028:	40028001 	mfc0	v0,c0_config1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:51
+9fc0002c:	7c432e40 	ext	v1,v0,0x19,0x6
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:52
+9fc00030:	40801000 	mtc0	zero,c0_entrylo0
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:53
+9fc00034:	40801800 	mtc0	zero,c0_entrylo1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:54
+9fc00038:	40802800 	mtc0	zero,c0_pagemask
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:55
+9fc0003c:	40803000 	mtc0	zero,c0_wired
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:56
+9fc00040:	3c048000 	lui	a0,0x8000
+
+9fc00044 <next_tlb_entry>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:59
+9fc00044:	40830000 	mtc0	v1,c0_index
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:60
+9fc00048:	40845000 	mtc0	a0,c0_entryhi
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:61
+9fc0004c:	000000c0 	ehb
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:62
+9fc00050:	42000002 	tlbwi
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:63
+9fc00054:	20844000 	addi	a0,a0,16384
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:65
+9fc00058:	1460fffa 	bnez	v1,9fc00044 <next_tlb_entry>
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:66
+9fc0005c:	2063ffff 	addi	v1,v1,-1
+
+9fc00060 <init_icache>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:73
+9fc00060:	40028001 	mfc0	v0,c0_config1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:74
+9fc00064:	7c4314c0 	ext	v1,v0,0x13,0x3
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:75
+9fc00068:	10600010 	beqz	v1,9fc000ac <done_icache>
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:76
+9fc0006c:	00000000 	nop
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:78
+9fc00070:	24060002 	li	a2,2
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:79
+9fc00074:	00661804 	sllv	v1,a2,v1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:81
+9fc00078:	7c441580 	ext	a0,v0,0x16,0x3
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:82
+9fc0007c:	24060040 	li	a2,64
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:83
+9fc00080:	00862004 	sllv	a0,a2,a0
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:85
+9fc00084:	7c451400 	ext	a1,v0,0x10,0x3
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:86
+9fc00088:	20a50001 	addi	a1,a1,1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:87
+9fc0008c:	70852002 	mul	a0,a0,a1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:88
+9fc00090:	3c068000 	lui	a2,0x8000
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:90
+9fc00094:	4080e000 	mtc0	zero,c0_taglo
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:91
+9fc00098:	00803825 	move	a3,a0
+
+9fc0009c <next_icache_tag>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:96
+9fc0009c:	bcc80000 	cache	0x8,0(a2)
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:97
+9fc000a0:	20e7ffff 	addi	a3,a3,-1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:98
+9fc000a4:	14e0fffd 	bnez	a3,9fc0009c <next_icache_tag>
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:99
+9fc000a8:	00c33020 	add	a2,a2,v1
+
+9fc000ac <done_icache>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:111
+9fc000ac:	40028000 	mfc0	v0,c0_config
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:112
+9fc000b0:	24030003 	li	v1,3
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:113
+9fc000b4:	7c621004 	ins	v0,v1,0x0,0x3
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:114
+9fc000b8:	40828000 	mtc0	v0,c0_config
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:116
+9fc000bc:	3c069fc0 	lui	a2,0x9fc0
+9fc000c0:	24c600cc 	addiu	a2,a2,204
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:117
+9fc000c4:	00c00008 	jr	a2
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:118
+9fc000c8:	000000c0 	ehb
+
+9fc000cc <init_dcache>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:124
+9fc000cc:	40028001 	mfc0	v0,c0_config1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:125
+9fc000d0:	7c431280 	ext	v1,v0,0xa,0x3
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:126
+9fc000d4:	10600011 	beqz	v1,9fc0011c <done_dcache>
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:127
+9fc000d8:	00000000 	nop
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:129
+9fc000dc:	24060002 	li	a2,2
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:130
+9fc000e0:	00661804 	sllv	v1,a2,v1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:132
+9fc000e4:	7c441340 	ext	a0,v0,0xd,0x3
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:133
+9fc000e8:	24060040 	li	a2,64
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:134
+9fc000ec:	00862004 	sllv	a0,a2,a0
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:136
+9fc000f0:	7c4511c0 	ext	a1,v0,0x7,0x3
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:137
+9fc000f4:	20a50001 	addi	a1,a1,1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:138
+9fc000f8:	70852002 	mul	a0,a0,a1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:139
+9fc000fc:	3c068000 	lui	a2,0x8000
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:141
+9fc00100:	4080e000 	mtc0	zero,c0_taglo
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:142
+9fc00104:	4080e002 	mtc0	zero,c0_taglo1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:143
+9fc00108:	00803825 	move	a3,a0
+
+9fc0010c <next_dcache_tag>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:148
+9fc0010c:	bcc90000 	cache	0x9,0(a2)
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:149
+9fc00110:	20e7ffff 	addi	a3,a3,-1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:150
+9fc00114:	14e0fffd 	bnez	a3,9fc0010c <next_dcache_tag>
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:151
+9fc00118:	00c33020 	add	a2,a2,v1
+
+9fc0011c <done_dcache>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:156
+9fc0011c:	3c1f9fc0 	lui	ra,0x9fc0
+9fc00120:	27ff013c 	addiu	ra,ra,316
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:157
+9fc00124:	00002025 	move	a0,zero
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:159
+9fc00128:	3c029fc0 	lui	v0,0x9fc0
+9fc0012c:	24420144 	addiu	v0,v0,324
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:160
+9fc00130:	4082f000 	mtc0	v0,c0_errorepc
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:161
+9fc00134:	000000c0 	ehb
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:165
+9fc00138:	42000018 	eret
+
+9fc0013c <all_done>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:171
+9fc0013c:	1000ffff 	b	9fc0013c <all_done>
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/boot.S:172
+9fc00140:	00000000 	nop
+
+9fc00144 <_start>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:16
+9fc00144:	03e08025 	move	s0,ra
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:18
+9fc00148:	3c1c8001 	lui	gp,0x8001
+9fc0014c:	279c87b8 	addiu	gp,gp,-30792
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:20
+9fc00150:	3c1d8004 	lui	sp,0x8004
+9fc00154:	27bd0000 	addiu	sp,sp,0
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:22
+9fc00158:	3c028000 	lui	v0,0x8000
+9fc0015c:	244207b8 	addiu	v0,v0,1976
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:23
+9fc00160:	3c038000 	lui	v1,0x8000
+9fc00164:	246307b8 	addiu	v1,v1,1976
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:24
+9fc00168:	10430004 	beq	v0,v1,9fc0017c <_start+0x38>
+9fc0016c:	00000000 	nop
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:26
+9fc00170:	24420004 	addiu	v0,v0,4
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:28
+9fc00174:	1443fffe 	bne	v0,v1,9fc00170 <_start+0x2c>
+9fc00178:	ac40fffc 	sw	zero,-4(v0)
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:31
+9fc0017c:	24040000 	li	a0,0
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:33
+9fc00180:	27bdfff0 	addiu	sp,sp,-16
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:37
+9fc00184:	40026000 	mfc0	v0,c0_status
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:38
+9fc00188:	7c02b584 	ins	v0,zero,0x16,0x1
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:39
+9fc0018c:	40826000 	mtc0	v0,c0_status
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:40
+9fc00190:	000000c0 	ehb
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:43
+9fc00194:	3c088000 	lui	t0,0x8000
+9fc00198:	25080204 	addiu	t0,t0,516
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:44
+9fc0019c:	0100f809 	jalr	t0
+9fc001a0:	00000000 	nop
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:47
+9fc001a4:	0200f825 	move	ra,s0
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/crt0.S:48
+9fc001a8:	03e00008 	jr	ra
+9fc001ac:	00000000 	nop
+
+Disassembly of section .exception_vector:
+
+80000000 <__exception_entry>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:45
+80000000:	3c1b0000 	lui	k1,0x0
+80000004:	277b0000 	addiu	k1,k1,0
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:46
+80000008:	1360fffd 	beqz	k1,80000000 <__exception_entry>
+8000000c:	00000000 	nop
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:47
+80000010:	03600008 	jr	k1
+80000014:	00000000 	nop
+	...
+
+80000080 <__xtlb_refill_loop>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:52
+80000080:	3c1b0000 	lui	k1,0x0
+80000084:	277b0000 	addiu	k1,k1,0
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:53
+80000088:	1360fffd 	beqz	k1,80000080 <__xtlb_refill_loop>
+8000008c:	00000000 	nop
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:54
+80000090:	03600008 	jr	k1
+80000094:	00000000 	nop
+	...
+
+80000100 <__cache_error_loop>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:59
+80000100:	3c1b0000 	lui	k1,0x0
+80000104:	277b0000 	addiu	k1,k1,0
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:60
+80000108:	1360fffd 	beqz	k1,80000100 <__cache_error_loop>
+8000010c:	00000000 	nop
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:61
+80000110:	03600008 	jr	k1
+80000114:	00000000 	nop
+	...
+
+80000180 <__general_exception_loop>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:66
+80000180:	3c1b0000 	lui	k1,0x0
+80000184:	277b0000 	addiu	k1,k1,0
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:67
+80000188:	1360fffd 	beqz	k1,80000180 <__general_exception_loop>
+8000018c:	00000000 	nop
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/exceptions.S:68
+80000190:	03600008 	jr	k1
+80000194:	00000000 	nop
+	...
+
+Disassembly of section .text:
+
+80000200 <__exception_handle>:
+\\khensu\Home02\ting3\Desktop\540P2\ece540w19_projGS_release_r1_0\software\ReadSwitches/dummy.S:59
+80000200:	00000000 	nop
+
+80000204 <main>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:133
+80000204:	24050001 	li	a1,1
+C:\Users\58390\Desktop\ReadSwitches/main.S:134
+80000208:	3c018000 	lui	at,0x8000
+8000020c:	a02507b0 	sb	a1,1968(at)
+
+80000210 <main_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:136
+80000210:	3c058000 	lui	a1,0x8000
+C:\Users\58390\Desktop\ReadSwitches/main.S:137
+80000214:	0c00012b 	jal	800004ac <Screen>
+80000218:	80a507b0 	lb	a1,1968(a1)
+C:\Users\58390\Desktop\ReadSwitches/main.S:138
+8000021c:	24040001 	li	a0,1
+C:\Users\58390\Desktop\ReadSwitches/main.S:139
+80000220:	10a40010 	beq	a1,a0,80000264 <check_tab_1>
+80000224:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:140
+80000228:	24040002 	li	a0,2
+C:\Users\58390\Desktop\ReadSwitches/main.S:141
+8000022c:	10a4004a 	beq	a1,a0,80000358 <play_screen>
+80000230:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:142
+80000234:	24040004 	li	a0,4
+C:\Users\58390\Desktop\ReadSwitches/main.S:143
+80000238:	10a40017 	beq	a1,a0,80000298 <check_tab_2>
+8000023c:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:144
+80000240:	24040008 	li	a0,8
+C:\Users\58390\Desktop\ReadSwitches/main.S:145
+80000244:	10a40014 	beq	a1,a0,80000298 <check_tab_2>
+80000248:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:146
+8000024c:	24040010 	li	a0,16
+C:\Users\58390\Desktop\ReadSwitches/main.S:147
+80000250:	10a4001b 	beq	a1,a0,800002c0 <check_tab_3>
+80000254:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:148
+80000258:	080000dd 	j	80000374 <loop>
+8000025c:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:149
+80000260:	00000000 	nop
+
+80000264 <check_tab_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:151
+80000264:	0c000126 	jal	80000498 <Keyboard>
+80000268:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:152
+8000026c:	241700ff 	li	s7,255
+C:\Users\58390\Desktop\ReadSwitches/main.S:153
+80000270:	00973024 	and	a2,a0,s7
+C:\Users\58390\Desktop\ReadSwitches/main.S:154
+80000274:	24050016 	li	a1,22
+C:\Users\58390\Desktop\ReadSwitches/main.S:155
+80000278:	10c50020 	beq	a2,a1,800002fc <j_screen_2>
+8000027c:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:156
+80000280:	2405001e 	li	a1,30
+C:\Users\58390\Desktop\ReadSwitches/main.S:157
+80000284:	10c50022 	beq	a2,a1,80000310 <j_screen_5>
+80000288:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:158
+8000028c:	080000dd 	j	80000374 <loop>
+80000290:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:159
+80000294:	00000000 	nop
+
+80000298 <check_tab_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:161
+80000298:	0c000126 	jal	80000498 <Keyboard>
+8000029c:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:162
+800002a0:	241700ff 	li	s7,255
+C:\Users\58390\Desktop\ReadSwitches/main.S:163
+800002a4:	00973024 	and	a2,a0,s7
+C:\Users\58390\Desktop\ReadSwitches/main.S:164
+800002a8:	24050029 	li	a1,41
+C:\Users\58390\Desktop\ReadSwitches/main.S:165
+800002ac:	10c5ffd5 	beq	a2,a1,80000204 <main>
+800002b0:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:166
+800002b4:	080000dd 	j	80000374 <loop>
+800002b8:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:167
+800002bc:	00000000 	nop
+
+800002c0 <check_tab_3>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:169
+800002c0:	0c000126 	jal	80000498 <Keyboard>
+800002c4:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:170
+800002c8:	241700ff 	li	s7,255
+C:\Users\58390\Desktop\ReadSwitches/main.S:171
+800002cc:	00973024 	and	a2,a0,s7
+C:\Users\58390\Desktop\ReadSwitches/main.S:172
+800002d0:	24050029 	li	a1,41
+C:\Users\58390\Desktop\ReadSwitches/main.S:173
+800002d4:	10c5ffcb 	beq	a2,a1,80000204 <main>
+800002d8:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:174
+800002dc:	080000dd 	j	80000374 <loop>
+800002e0:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:175
+800002e4:	00000000 	nop
+
+800002e8 <j_screen_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:177
+800002e8:	24080001 	li	t0,1
+C:\Users\58390\Desktop\ReadSwitches/main.S:178
+800002ec:	3c018000 	lui	at,0x8000
+C:\Users\58390\Desktop\ReadSwitches/main.S:179
+800002f0:	080000dd 	j	80000374 <loop>
+800002f4:	a02807b0 	sb	t0,1968(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:180
+800002f8:	00000000 	nop
+
+800002fc <j_screen_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:182
+800002fc:	24080002 	li	t0,2
+C:\Users\58390\Desktop\ReadSwitches/main.S:183
+80000300:	3c018000 	lui	at,0x8000
+C:\Users\58390\Desktop\ReadSwitches/main.S:184
+80000304:	080000dd 	j	80000374 <loop>
+80000308:	a02807b0 	sb	t0,1968(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:185
+8000030c:	00000000 	nop
+
+80000310 <j_screen_5>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:187
+80000310:	24080010 	li	t0,16
+C:\Users\58390\Desktop\ReadSwitches/main.S:188
+80000314:	3c018000 	lui	at,0x8000
+80000318:	a02807b0 	sb	t0,1968(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:189
+8000031c:	3c058000 	lui	a1,0x8000
+80000320:	80a507b5 	lb	a1,1973(a1)
+C:\Users\58390\Desktop\ReadSwitches/main.S:190
+80000324:	3c068000 	lui	a2,0x8000
+80000328:	80c607b6 	lb	a2,1974(a2)
+C:\Users\58390\Desktop\ReadSwitches/main.S:191
+8000032c:	3c078000 	lui	a3,0x8000
+80000330:	80e707b7 	lb	a3,1975(a3)
+C:\Users\58390\Desktop\ReadSwitches/main.S:192
+80000334:	00063080 	sll	a2,a2,0x2
+C:\Users\58390\Desktop\ReadSwitches/main.S:193
+80000338:	00a62825 	or	a1,a1,a2
+C:\Users\58390\Desktop\ReadSwitches/main.S:194
+8000033c:	00073900 	sll	a3,a3,0x4
+C:\Users\58390\Desktop\ReadSwitches/main.S:195
+80000340:	00a72825 	or	a1,a1,a3
+C:\Users\58390\Desktop\ReadSwitches/main.S:196
+80000344:	3c19bf80 	lui	t9,0xbf80
+80000348:	37390034 	ori	t9,t9,0x34
+C:\Users\58390\Desktop\ReadSwitches/main.S:198
+8000034c:	080000dd 	j	80000374 <loop>
+80000350:	af250000 	sw	a1,0(t9)
+C:\Users\58390\Desktop\ReadSwitches/main.S:199
+80000354:	00000000 	nop
+
+80000358 <play_screen>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:201
+80000358:	2405001c 	li	a1,28
+C:\Users\58390\Desktop\ReadSwitches/main.S:202
+8000035c:	3c19bf80 	lui	t9,0xbf80
+80000360:	37390038 	ori	t9,t9,0x38
+C:\Users\58390\Desktop\ReadSwitches/main.S:204
+80000364:	10000005 	b	8000037c <Players_control>
+80000368:	af250000 	sw	a1,0(t9)
+
+8000036c <Check_Hitted>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:206
+8000036c:	10000099 	b	800005d4 <GREEN_HITTED>
+80000370:	00000000 	nop
+
+80000374 <loop>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:208
+80000374:	1000ffa6 	b	80000210 <main_1>
+80000378:	00000000 	nop
+
+8000037c <Players_control>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:213
+8000037c:	0c000126 	jal	80000498 <Keyboard>
+80000380:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:214
+80000384:	241700ff 	li	s7,255
+C:\Users\58390\Desktop\ReadSwitches/main.S:215
+80000388:	00973024 	and	a2,a0,s7
+C:\Users\58390\Desktop\ReadSwitches/main.S:216
+8000038c:	2417001d 	li	s7,29
+C:\Users\58390\Desktop\ReadSwitches/main.S:217
+80000390:	10d7000c 	beq	a2,s7,800003c4 <Player_1>
+80000394:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:218
+80000398:	2417001b 	li	s7,27
+C:\Users\58390\Desktop\ReadSwitches/main.S:219
+8000039c:	10d70009 	beq	a2,s7,800003c4 <Player_1>
+800003a0:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:220
+800003a4:	2417001c 	li	s7,28
+C:\Users\58390\Desktop\ReadSwitches/main.S:221
+800003a8:	10d70006 	beq	a2,s7,800003c4 <Player_1>
+800003ac:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:222
+800003b0:	24170023 	li	s7,35
+C:\Users\58390\Desktop\ReadSwitches/main.S:223
+800003b4:	10d70003 	beq	a2,s7,800003c4 <Player_1>
+800003b8:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:225
+800003bc:	10000005 	b	800003d4 <Player_1_next>
+800003c0:	24030000 	li	v1,0
+
+800003c4 <Player_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:227
+800003c4:	0c000135 	jal	800004d4 <expect_orient_1>
+800003c8:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:228
+800003cc:	0c00014b 	jal	8000052c <check_orient_1>
+800003d0:	00000000 	nop
+
+800003d4 <Player_1_next>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:230
+800003d4:	3c19bf80 	lui	t9,0xbf80
+800003d8:	37390010 	ori	t9,t9,0x10
+C:\Users\58390\Desktop\ReadSwitches/main.S:231
+800003dc:	af230000 	sw	v1,0(t9)
+C:\Users\58390\Desktop\ReadSwitches/main.S:233
+800003e0:	24170012 	li	s7,18
+C:\Users\58390\Desktop\ReadSwitches/main.S:234
+800003e4:	10d70003 	beq	a2,s7,800003f4 <shot_1>
+800003e8:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:236
+800003ec:	10000002 	b	800003f8 <shot_1_next>
+800003f0:	24050000 	li	a1,0
+
+800003f4 <shot_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:237
+800003f4:	24050001 	li	a1,1
+
+800003f8 <shot_1_next>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:239
+800003f8:	3c19bf80 	lui	t9,0xbf80
+800003fc:	37390038 	ori	t9,t9,0x38
+C:\Users\58390\Desktop\ReadSwitches/main.S:240
+80000400:	af250000 	sw	a1,0(t9)
+C:\Users\58390\Desktop\ReadSwitches/main.S:243
+80000404:	0c000126 	jal	80000498 <Keyboard>
+80000408:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:244
+8000040c:	00042202 	srl	a0,a0,0x8
+C:\Users\58390\Desktop\ReadSwitches/main.S:245
+80000410:	24170043 	li	s7,67
+C:\Users\58390\Desktop\ReadSwitches/main.S:246
+80000414:	1097000d 	beq	a0,s7,8000044c <Player_2>
+80000418:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:247
+8000041c:	24170042 	li	s7,66
+C:\Users\58390\Desktop\ReadSwitches/main.S:248
+80000420:	1097000a 	beq	a0,s7,8000044c <Player_2>
+80000424:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:249
+80000428:	2417003b 	li	s7,59
+C:\Users\58390\Desktop\ReadSwitches/main.S:250
+8000042c:	10970007 	beq	a0,s7,8000044c <Player_2>
+80000430:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:251
+80000434:	2417004b 	li	s7,75
+C:\Users\58390\Desktop\ReadSwitches/main.S:252
+80000438:	10970004 	beq	a0,s7,8000044c <Player_2>
+8000043c:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:254
+80000440:	10000007 	b	80000460 <Player_2_next>
+80000444:	24030000 	li	v1,0
+C:\Users\58390\Desktop\ReadSwitches/main.S:255
+80000448:	00000000 	nop
+
+8000044c <Player_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:257
+8000044c:	0c000155 	jal	80000554 <expect_orient_2>
+80000450:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:258
+80000454:	0c00016b 	jal	800005ac <check_orient_2>
+80000458:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:259
+8000045c:	00000000 	nop
+
+80000460 <Player_2_next>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:261
+80000460:	3c19bf80 	lui	t9,0xbf80
+80000464:	37390020 	ori	t9,t9,0x20
+C:\Users\58390\Desktop\ReadSwitches/main.S:262
+80000468:	af230000 	sw	v1,0(t9)
+C:\Users\58390\Desktop\ReadSwitches/main.S:264
+8000046c:	24170059 	li	s7,89
+C:\Users\58390\Desktop\ReadSwitches/main.S:265
+80000470:	10970003 	beq	a0,s7,80000480 <shot_2>
+80000474:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:267
+80000478:	10000002 	b	80000484 <shot_2_next>
+8000047c:	24050000 	li	a1,0
+
+80000480 <shot_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:268
+80000480:	24050002 	li	a1,2
+
+80000484 <shot_2_next>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:270
+80000484:	3c19bf80 	lui	t9,0xbf80
+80000488:	37390038 	ori	t9,t9,0x38
+C:\Users\58390\Desktop\ReadSwitches/main.S:273
+8000048c:	1000ffb7 	b	8000036c <Check_Hitted>
+80000490:	af250000 	sw	a1,0(t9)
+C:\Users\58390\Desktop\ReadSwitches/main.S:274
+80000494:	00000000 	nop
+
+80000498 <Keyboard>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:279
+80000498:	3c19bf80 	lui	t9,0xbf80
+8000049c:	37390008 	ori	t9,t9,0x8
+C:\Users\58390\Desktop\ReadSwitches/main.S:281
+800004a0:	03e00008 	jr	ra
+800004a4:	8f240000 	lw	a0,0(t9)
+C:\Users\58390\Desktop\ReadSwitches/main.S:282
+800004a8:	00000000 	nop
+
+800004ac <Screen>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:287
+800004ac:	3c19bf80 	lui	t9,0xbf80
+800004b0:	37390030 	ori	t9,t9,0x30
+C:\Users\58390\Desktop\ReadSwitches/main.S:289
+800004b4:	03e00008 	jr	ra
+800004b8:	af250000 	sw	a1,0(t9)
+C:\Users\58390\Desktop\ReadSwitches/main.S:290
+800004bc:	00000000 	nop
+
+800004c0 <HITTED>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:295
+800004c0:	3c19bf80 	lui	t9,0xbf80
+800004c4:	3739002c 	ori	t9,t9,0x2c
+C:\Users\58390\Desktop\ReadSwitches/main.S:297
+800004c8:	03e00008 	jr	ra
+800004cc:	8f240000 	lw	a0,0(t9)
+C:\Users\58390\Desktop\ReadSwitches/main.S:298
+800004d0:	00000000 	nop
+
+800004d4 <expect_orient_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:303
+800004d4:	2417001d 	li	s7,29
+C:\Users\58390\Desktop\ReadSwitches/main.S:304
+800004d8:	10d7000c 	beq	a2,s7,8000050c <Up_1>
+800004dc:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:305
+800004e0:	2417001b 	li	s7,27
+C:\Users\58390\Desktop\ReadSwitches/main.S:306
+800004e4:	10d7000b 	beq	a2,s7,80000514 <Down_1>
+800004e8:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:307
+800004ec:	2417001c 	li	s7,28
+C:\Users\58390\Desktop\ReadSwitches/main.S:308
+800004f0:	10d7000a 	beq	a2,s7,8000051c <Left_1>
+800004f4:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:309
+800004f8:	24170023 	li	s7,35
+C:\Users\58390\Desktop\ReadSwitches/main.S:310
+800004fc:	10d70009 	beq	a2,s7,80000524 <Right_1>
+80000500:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:311
+80000504:	03e00008 	jr	ra
+80000508:	00000000 	nop
+
+8000050c <Up_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:314
+8000050c:	03e00008 	jr	ra
+80000510:	24020000 	li	v0,0
+
+80000514 <Down_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:317
+80000514:	03e00008 	jr	ra
+80000518:	24020004 	li	v0,4
+
+8000051c <Left_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:320
+8000051c:	03e00008 	jr	ra
+80000520:	24020006 	li	v0,6
+
+80000524 <Right_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:323
+80000524:	03e00008 	jr	ra
+80000528:	24020002 	li	v0,2
+
+8000052c <check_orient_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:330
+8000052c:	3c0dbf80 	lui	t5,0xbf80
+80000530:	35ad000c 	ori	t5,t5,0xc
+C:\Users\58390\Desktop\ReadSwitches/main.S:331
+80000534:	8db50000 	lw	s5,0(t5)
+C:\Users\58390\Desktop\ReadSwitches/main.S:332
+80000538:	32b50007 	andi	s5,s5,0x7
+C:\Users\58390\Desktop\ReadSwitches/main.S:333
+8000053c:	10550003 	beq	v0,s5,8000054c <go_forward_1>
+80000540:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:335
+80000544:	03e00008 	jr	ra
+80000548:	24030045 	li	v1,69
+
+8000054c <go_forward_1>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:338
+8000054c:	03e00008 	jr	ra
+80000550:	240300ff 	li	v1,255
+
+80000554 <expect_orient_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:343
+80000554:	24170043 	li	s7,67
+C:\Users\58390\Desktop\ReadSwitches/main.S:344
+80000558:	1097000c 	beq	a0,s7,8000058c <Up_2>
+8000055c:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:345
+80000560:	24170042 	li	s7,66
+C:\Users\58390\Desktop\ReadSwitches/main.S:346
+80000564:	1097000b 	beq	a0,s7,80000594 <Down_2>
+80000568:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:347
+8000056c:	2417003b 	li	s7,59
+C:\Users\58390\Desktop\ReadSwitches/main.S:348
+80000570:	1097000a 	beq	a0,s7,8000059c <Left_2>
+80000574:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:349
+80000578:	2417004b 	li	s7,75
+C:\Users\58390\Desktop\ReadSwitches/main.S:350
+8000057c:	10970009 	beq	a0,s7,800005a4 <Right_2>
+80000580:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:351
+80000584:	03e00008 	jr	ra
+80000588:	00000000 	nop
+
+8000058c <Up_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:354
+8000058c:	03e00008 	jr	ra
+80000590:	24020000 	li	v0,0
+
+80000594 <Down_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:357
+80000594:	03e00008 	jr	ra
+80000598:	24020004 	li	v0,4
+
+8000059c <Left_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:360
+8000059c:	03e00008 	jr	ra
+800005a0:	24020006 	li	v0,6
+
+800005a4 <Right_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:363
+800005a4:	03e00008 	jr	ra
+800005a8:	24020002 	li	v0,2
+
+800005ac <check_orient_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:370
+800005ac:	3c0dbf80 	lui	t5,0xbf80
+800005b0:	35ad001c 	ori	t5,t5,0x1c
+C:\Users\58390\Desktop\ReadSwitches/main.S:371
+800005b4:	8db50000 	lw	s5,0(t5)
+C:\Users\58390\Desktop\ReadSwitches/main.S:372
+800005b8:	32b50007 	andi	s5,s5,0x7
+C:\Users\58390\Desktop\ReadSwitches/main.S:373
+800005bc:	10550003 	beq	v0,s5,800005cc <go_forward_2>
+800005c0:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:375
+800005c4:	03e00008 	jr	ra
+800005c8:	24030045 	li	v1,69
+
+800005cc <go_forward_2>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:378
+800005cc:	03e00008 	jr	ra
+800005d0:	240300ff 	li	v1,255
+
+800005d4 <GREEN_HITTED>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:381
+800005d4:	3c17bf80 	lui	s7,0xbf80
+800005d8:	36f7002c 	ori	s7,s7,0x2c
+C:\Users\58390\Desktop\ReadSwitches/main.S:382
+800005dc:	8ee80000 	lw	t0,0(s7)
+C:\Users\58390\Desktop\ReadSwitches/main.S:383
+800005e0:	24090001 	li	t1,1
+C:\Users\58390\Desktop\ReadSwitches/main.S:384
+800005e4:	01284024 	and	t0,t1,t0
+C:\Users\58390\Desktop\ReadSwitches/main.S:385
+800005e8:	11000005 	beqz	t0,80000600 <ADD_GREEN_TIME>
+800005ec:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:386
+800005f0:	24040001 	li	a0,1
+C:\Users\58390\Desktop\ReadSwitches/main.S:387
+800005f4:	3c018000 	lui	at,0x8000
+C:\Users\58390\Desktop\ReadSwitches/main.S:388
+800005f8:	10000011 	b	80000640 <GREEN_BASE_HITTED>
+800005fc:	a02407b3 	sb	a0,1971(at)
+
+80000600 <ADD_GREEN_TIME>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:391
+80000600:	3c0b8000 	lui	t3,0x8000
+80000604:	816b07b3 	lb	t3,1971(t3)
+C:\Users\58390\Desktop\ReadSwitches/main.S:392
+80000608:	1160000d 	beqz	t3,80000640 <GREEN_BASE_HITTED>
+8000060c:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:393
+80000610:	3c098000 	lui	t1,0x8000
+80000614:	812907b1 	lb	t1,1969(t1)
+C:\Users\58390\Desktop\ReadSwitches/main.S:394
+80000618:	21290001 	addi	t1,t1,1
+C:\Users\58390\Desktop\ReadSwitches/main.S:395
+8000061c:	3c018000 	lui	at,0x8000
+80000620:	a02907b1 	sb	t1,1969(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:396
+80000624:	3c018000 	lui	at,0x8000
+80000628:	a02007b3 	sb	zero,1971(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:397
+8000062c:	240a0003 	li	t2,3
+C:\Users\58390\Desktop\ReadSwitches/main.S:398
+80000630:	112a0030 	beq	t1,t2,800006f4 <win_red>
+80000634:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:399
+80000638:	10000001 	b	80000640 <GREEN_BASE_HITTED>
+8000063c:	00000000 	nop
+
+80000640 <GREEN_BASE_HITTED>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:402
+80000640:	3c17bf80 	lui	s7,0xbf80
+80000644:	36f7002c 	ori	s7,s7,0x2c
+C:\Users\58390\Desktop\ReadSwitches/main.S:403
+80000648:	8ee80000 	lw	t0,0(s7)
+C:\Users\58390\Desktop\ReadSwitches/main.S:404
+8000064c:	24090002 	li	t1,2
+C:\Users\58390\Desktop\ReadSwitches/main.S:405
+80000650:	01284024 	and	t0,t1,t0
+C:\Users\58390\Desktop\ReadSwitches/main.S:406
+80000654:	11090027 	beq	t0,t1,800006f4 <win_red>
+80000658:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:407
+8000065c:	10000001 	b	80000664 <RED_HITTED>
+80000660:	00000000 	nop
+
+80000664 <RED_HITTED>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:410
+80000664:	3c17bf80 	lui	s7,0xbf80
+80000668:	36f7002c 	ori	s7,s7,0x2c
+C:\Users\58390\Desktop\ReadSwitches/main.S:411
+8000066c:	8ee80000 	lw	t0,0(s7)
+C:\Users\58390\Desktop\ReadSwitches/main.S:412
+80000670:	24090004 	li	t1,4
+C:\Users\58390\Desktop\ReadSwitches/main.S:413
+80000674:	01284024 	and	t0,t1,t0
+C:\Users\58390\Desktop\ReadSwitches/main.S:414
+80000678:	11000005 	beqz	t0,80000690 <ADD_RED_TIME>
+8000067c:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:415
+80000680:	24040001 	li	a0,1
+C:\Users\58390\Desktop\ReadSwitches/main.S:416
+80000684:	3c018000 	lui	at,0x8000
+C:\Users\58390\Desktop\ReadSwitches/main.S:417
+80000688:	10000011 	b	800006d0 <RED_BASE_HITTED>
+8000068c:	a02407b4 	sb	a0,1972(at)
+
+80000690 <ADD_RED_TIME>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:419
+80000690:	3c0b8000 	lui	t3,0x8000
+80000694:	816b07b4 	lb	t3,1972(t3)
+C:\Users\58390\Desktop\ReadSwitches/main.S:420
+80000698:	1160000d 	beqz	t3,800006d0 <RED_BASE_HITTED>
+8000069c:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:421
+800006a0:	3c098000 	lui	t1,0x8000
+800006a4:	812907b2 	lb	t1,1970(t1)
+C:\Users\58390\Desktop\ReadSwitches/main.S:422
+800006a8:	21290001 	addi	t1,t1,1
+C:\Users\58390\Desktop\ReadSwitches/main.S:423
+800006ac:	3c018000 	lui	at,0x8000
+800006b0:	a02907b2 	sb	t1,1970(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:424
+800006b4:	3c018000 	lui	at,0x8000
+800006b8:	a02007b4 	sb	zero,1972(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:425
+800006bc:	240a0003 	li	t2,3
+C:\Users\58390\Desktop\ReadSwitches/main.S:426
+800006c0:	112a001f 	beq	t1,t2,80000740 <win_green>
+800006c4:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:427
+800006c8:	10000001 	b	800006d0 <RED_BASE_HITTED>
+800006cc:	00000000 	nop
+
+800006d0 <RED_BASE_HITTED>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:430
+800006d0:	3c17bf80 	lui	s7,0xbf80
+800006d4:	36f7002c 	ori	s7,s7,0x2c
+C:\Users\58390\Desktop\ReadSwitches/main.S:431
+800006d8:	8ee80000 	lw	t0,0(s7)
+C:\Users\58390\Desktop\ReadSwitches/main.S:432
+800006dc:	24090008 	li	t1,8
+C:\Users\58390\Desktop\ReadSwitches/main.S:433
+800006e0:	01284024 	and	t0,t1,t0
+C:\Users\58390\Desktop\ReadSwitches/main.S:434
+800006e4:	11090016 	beq	t0,t1,80000740 <win_green>
+800006e8:	00000000 	nop
+C:\Users\58390\Desktop\ReadSwitches/main.S:435
+800006ec:	1000ff21 	b	80000374 <loop>
+800006f0:	00000000 	nop
+
+800006f4 <win_red>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:438
+800006f4:	24050008 	li	a1,8
+C:\Users\58390\Desktop\ReadSwitches/main.S:439
+800006f8:	3c018000 	lui	at,0x8000
+800006fc:	a02507b0 	sb	a1,1968(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:440
+80000700:	3c068000 	lui	a2,0x8000
+80000704:	80c607b5 	lb	a2,1973(a2)
+C:\Users\58390\Desktop\ReadSwitches/main.S:441
+80000708:	3c078000 	lui	a3,0x8000
+8000070c:	80e707b6 	lb	a3,1974(a3)
+C:\Users\58390\Desktop\ReadSwitches/main.S:442
+80000710:	3c018000 	lui	at,0x8000
+80000714:	a02607b6 	sb	a2,1974(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:443
+80000718:	3c018000 	lui	at,0x8000
+8000071c:	a02707b7 	sb	a3,1975(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:444
+80000720:	24060002 	li	a2,2
+C:\Users\58390\Desktop\ReadSwitches/main.S:445
+80000724:	3c018000 	lui	at,0x8000
+80000728:	a02607b5 	sb	a2,1973(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:446
+8000072c:	3c018000 	lui	at,0x8000
+80000730:	a02007b2 	sb	zero,1970(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:447
+80000734:	3c018000 	lui	at,0x8000
+C:\Users\58390\Desktop\ReadSwitches/main.S:448
+80000738:	1000ff0e 	b	80000374 <loop>
+8000073c:	a02007b1 	sb	zero,1969(at)
+
+80000740 <win_green>:
+C:\Users\58390\Desktop\ReadSwitches/main.S:451
+80000740:	24050004 	li	a1,4
+C:\Users\58390\Desktop\ReadSwitches/main.S:452
+80000744:	3c018000 	lui	at,0x8000
+80000748:	a02507b0 	sb	a1,1968(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:453
+8000074c:	3c068000 	lui	a2,0x8000
+80000750:	80c607b5 	lb	a2,1973(a2)
+C:\Users\58390\Desktop\ReadSwitches/main.S:454
+80000754:	3c078000 	lui	a3,0x8000
+80000758:	80e707b6 	lb	a3,1974(a3)
+C:\Users\58390\Desktop\ReadSwitches/main.S:455
+8000075c:	3c018000 	lui	at,0x8000
+80000760:	a02607b6 	sb	a2,1974(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:456
+80000764:	3c018000 	lui	at,0x8000
+80000768:	a02707b7 	sb	a3,1975(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:457
+8000076c:	24060001 	li	a2,1
+C:\Users\58390\Desktop\ReadSwitches/main.S:458
+80000770:	3c018000 	lui	at,0x8000
+80000774:	a02607b5 	sb	a2,1973(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:459
+80000778:	3c018000 	lui	at,0x8000
+8000077c:	a02007b2 	sb	zero,1970(at)
+C:\Users\58390\Desktop\ReadSwitches/main.S:460
+80000780:	3c018000 	lui	at,0x8000
+C:\Users\58390\Desktop\ReadSwitches/main.S:461
+80000784:	1000fefb 	b	80000374 <loop>
+80000788:	a02007b1 	sb	zero,1969(at)
+
+Disassembly of section .data:
+
+800007b0 <_fdata>:
+	...
+
+800007b1 <SP_GREEN_HITTED>:
+	...
+
+800007b2 <SP_RED_HITTED>:
+	...
+
+800007b3 <SP_GREEN_HITTED_TIME>:
+	...
+
+800007b4 <SP_RED_HITTED_TIME>:
+	...
+
+800007b5 <SP_GAME_1>:
+	...
+
+800007b6 <SP_GAME_2>:
+	...
+
+800007b7 <SP_GAME_3>:
+	...
+
+Disassembly of section .debug_aranges:
+
+00000000 <.debug_aranges>:
+   0:	0000001c 	0x1c
+   4:	00000002 	srl	zero,zero,0x0
+   8:	00040000 	sll	zero,a0,0x0
+   c:	00000000 	nop
+  10:	9fc00144 	0x9fc00144
+  14:	0000006c 	0x6c
+	...
+  20:	0000001c 	0x1c
+  24:	00880002 	0x880002
+  28:	00040000 	sll	zero,a0,0x0
+  2c:	00000000 	nop
+  30:	9fc00000 	0x9fc00000
+  34:	00000144 	0x144
+	...
+  40:	0000001c 	0x1c
+  44:	01100002 	0x1100002
+  48:	00040000 	sll	zero,a0,0x0
+  4c:	00000000 	nop
+  50:	80000000 	lb	zero,0(zero)
+  54:	00000198 	0x198
+	...
+  60:	0000001c 	0x1c
+  64:	019e0002 	0x19e0002
+  68:	00040000 	sll	zero,a0,0x0
+  6c:	00000000 	nop
+  70:	80000200 	lb	zero,512(zero)
+  74:	00000004 	sllv	zero,zero,zero
+	...
+  80:	0000001c 	0x1c
+  84:	02270002 	0x2270002
+  88:	00040000 	sll	zero,a0,0x0
+  8c:	00000000 	nop
+  90:	80000204 	lb	zero,516(zero)
+  94:	00000588 	0x588
+	...
+
+Disassembly of section .debug_info:
+
+00000000 <.debug_info>:
+   0:	00000084 	0x84
+   4:	00000002 	srl	zero,zero,0x0
+   8:	01040000 	0x1040000
+   c:	00000000 	nop
+  10:	9fc00144 	0x9fc00144
+  14:	9fc001b0 	0x9fc001b0
+  18:	30747263 	andi	s4,v1,0x7263
+  1c:	5c00532e 	bgtzl	zero,14cd8 <Keyboard_rightshift+0x14c7f>
+  20:	65686b5c 	0x65686b5c
+  24:	5c75736e 	0x5c75736e
+  28:	656d6f48 	0x656d6f48
+  2c:	745c3230 	jalx	170c8c0 <__memory_size+0x16ed0c0>
+  30:	33676e69 	andi	a3,k1,0x6e69
+  34:	7365445c 	udi12	k1,a1,t0,0x11
+  38:	706f746b 	s16std	xr1,v1,-70,ptn1
+  3c:	3034355c 	andi	s4,at,0x355c
+  40:	655c3250 	0x655c3250
+  44:	34356563 	ori	s5,at,0x6563
+  48:	39317730 	xori	s1,t1,0x7730
+  4c:	6f72705f 	0x6f72705f
+  50:	5f53476a 	0x5f53476a
+  54:	656c6572 	0x656c6572
+  58:	5f657361 	0x5f657361
+  5c:	305f3172 	andi	ra,v0,0x3172
+  60:	666f735c 	0x666f735c
+  64:	72617774 	q16sll	xr13,xr13,xr5,xr8,9
+  68:	65525c65 	0x65525c65
+  6c:	77536461 	jalx	d4d9184 <__memory_size+0xd4b9984>
+  70:	68637469 	0x68637469
+  74:	47007365 	bz.b	$w0,1ce0c <Keyboard_rightshift+0x1cdb3>
+  78:	4120554e 	0x4120554e
+  7c:	2e322053 	sltiu	s2,s1,8275
+  80:	392e3432 	xori	t6,t1,0x3432
+  84:	80010030 	lb	at,48(zero)
+  88:	00000084 	0x84
+  8c:	00140002 	srl	zero,s4,0x0
+  90:	01040000 	0x1040000
+  94:	00000048 	0x48
+  98:	9fc00000 	0x9fc00000
+  9c:	9fc00144 	0x9fc00144
+  a0:	746f6f62 	jalx	1bdbd88 <__memory_size+0x1bbc588>
+  a4:	5c00532e 	bgtzl	zero,14d60 <Keyboard_rightshift+0x14d07>
+  a8:	65686b5c 	0x65686b5c
+  ac:	5c75736e 	0x5c75736e
+  b0:	656d6f48 	0x656d6f48
+  b4:	745c3230 	jalx	170c8c0 <__memory_size+0x16ed0c0>
+  b8:	33676e69 	andi	a3,k1,0x6e69
+  bc:	7365445c 	udi12	k1,a1,t0,0x11
+  c0:	706f746b 	s16std	xr1,v1,-70,ptn1
+  c4:	3034355c 	andi	s4,at,0x355c
+  c8:	655c3250 	0x655c3250
+  cc:	34356563 	ori	s5,at,0x6563
+  d0:	39317730 	xori	s1,t1,0x7730
+  d4:	6f72705f 	0x6f72705f
+  d8:	5f53476a 	0x5f53476a
+  dc:	656c6572 	0x656c6572
+  e0:	5f657361 	0x5f657361
+  e4:	305f3172 	andi	ra,v0,0x3172
+  e8:	666f735c 	0x666f735c
+  ec:	72617774 	q16sll	xr13,xr13,xr5,xr8,9
+  f0:	65525c65 	0x65525c65
+  f4:	77536461 	jalx	d4d9184 <__memory_size+0xd4b9984>
+  f8:	68637469 	0x68637469
+  fc:	47007365 	bz.b	$w0,1ce94 <Keyboard_rightshift+0x1ce3b>
+ 100:	4120554e 	0x4120554e
+ 104:	2e322053 	sltiu	s2,s1,8275
+ 108:	392e3432 	xori	t6,t1,0x3432
+ 10c:	80010030 	lb	at,48(zero)
+ 110:	0000008a 	0x8a
+ 114:	00280002 	ror	zero,t0,0x0
+ 118:	01040000 	0x1040000
+ 11c:	000000ce 	0xce
+ 120:	80000000 	lb	zero,0(zero)
+ 124:	80000198 	lb	zero,408(zero)
+ 128:	65637865 	0x65637865
+ 12c:	6f697470 	0x6f697470
+ 130:	532e736e 	beql	t9,t6,1ceec <Keyboard_rightshift+0x1ce93>
+ 134:	6b5c5c00 	0x6b5c5c00
+ 138:	736e6568 	lxhu	t4,k1,t6,2
+ 13c:	6f485c75 	0x6f485c75
+ 140:	3230656d 	andi	s0,s1,0x656d
+ 144:	6e69745c 	0x6e69745c
+ 148:	445c3367 	0x445c3367
+ 14c:	746b7365 	jalx	1adcd94 <__memory_size+0x1abd594>
+ 150:	355c706f 	ori	gp,t2,0x706f
+ 154:	32503034 	andi	s0,s2,0x3034
+ 158:	6563655c 	0x6563655c
+ 15c:	77303435 	jalx	cc0d0d4 <__memory_size+0xcbed8d4>
+ 160:	705f3931 	d32slr	xr4,xr14,xr12,xr7,1
+ 164:	476a6f72 	bz.d	$w10,1bf30 <Keyboard_rightshift+0x1bed7>
+ 168:	65725f53 	0x65725f53
+ 16c:	7361656c 	s16ldi	xr5,k1,178,ptn0
+ 170:	31725f65 	andi	s2,t3,0x5f65
+ 174:	735c305f 	udi15	k0,gp,a2,0x1
+ 178:	7774666f 	jalx	dd199bc <__memory_size+0xdcfa1bc>
+ 17c:	5c657261 	0x5c657261
+ 180:	64616552 	0x64616552
+ 184:	74697753 	jalx	1a5dd4c <__memory_size+0x1a3e54c>
+ 188:	73656863 	s8std	xr1,k1,90,ptn1
+ 18c:	554e4700 	bnel	t2,t6,11d90 <Keyboard_rightshift+0x11d37>
+ 190:	20534120 	addi	s3,v0,16672
+ 194:	34322e32 	ori	s2,at,0x2e32
+ 198:	0030392e 	0x30392e
+ 19c:	00858001 	movt	s0,a0,$fcc1
+ 1a0:	00020000 	sll	zero,v0,0x0
+ 1a4:	0000003c 	0x3c
+ 1a8:	011b0104 	0x11b0104
+ 1ac:	02000000 	0x2000000
+ 1b0:	02048000 	0x2048000
+ 1b4:	75648000 	jalx	5920000 <__memory_size+0x5900800>
+ 1b8:	2e796d6d 	sltiu	t9,s3,28013
+ 1bc:	5c5c0053 	0x5c5c0053
+ 1c0:	6e65686b 	0x6e65686b
+ 1c4:	485c7573 	0x485c7573
+ 1c8:	30656d6f 	andi	a1,v1,0x6d6f
+ 1cc:	69745c32 	0x69745c32
+ 1d0:	5c33676e 	0x5c33676e
+ 1d4:	6b736544 	0x6b736544
+ 1d8:	5c706f74 	0x5c706f74
+ 1dc:	50303435 	beql	at,s0,d2b4 <Keyboard_rightshift+0xd25b>
+ 1e0:	63655c32 	0x63655c32
+ 1e4:	30343565 	andi	s4,at,0x3565
+ 1e8:	5f393177 	0x5f393177
+ 1ec:	6a6f7270 	0x6a6f7270
+ 1f0:	725f5347 	0x725f5347
+ 1f4:	61656c65 	0x61656c65
+ 1f8:	725f6573 	d32sar	xr5,xr9,xr13,xr7,9
+ 1fc:	5c305f31 	0x5c305f31
+ 200:	74666f73 	jalx	199bdcc <__memory_size+0x197c5cc>
+ 204:	65726177 	0x65726177
+ 208:	6165525c 	0x6165525c
+ 20c:	69775364 	0x69775364
+ 210:	65686374 	0x65686374
+ 214:	4e470073 	c3	0x470073
+ 218:	53412055 	beql	k0,at,8370 <Keyboard_rightshift+0x8317>
+ 21c:	322e3220 	andi	t6,s1,0x3220
+ 220:	30392e34 	andi	t9,at,0x2e34
+ 224:	50800100 	beqzl	a0,628 <Keyboard_rightshift+0x5cf>
+ 228:	02000000 	0x2000000
+ 22c:	00005000 	sll	t2,zero,0x0
+ 230:	52010400 	beql	s0,at,1234 <Keyboard_rightshift+0x11db>
+ 234:	04000001 	bltz	zero,23c <Keyboard_rightshift+0x1e3>
+ 238:	8c800002 	lw	zero,2(a0)
+ 23c:	6d800007 	0x6d800007
+ 240:	2e6e6961 	sltiu	t6,s3,26977
+ 244:	3a430053 	xori	v1,s2,0x53
+ 248:	6573555c 	0x6573555c
+ 24c:	355c7372 	ori	gp,t2,0x7372
+ 250:	30393338 	andi	t9,at,0x3338
+ 254:	7365445c 	udi12	k1,a1,t0,0x11
+ 258:	706f746b 	s16std	xr1,v1,-70,ptn1
+ 25c:	6165525c 	0x6165525c
+ 260:	69775364 	0x69775364
+ 264:	65686374 	0x65686374
+ 268:	4e470073 	c3	0x470073
+ 26c:	53412055 	beql	k0,at,83c4 <Keyboard_rightshift+0x836b>
+ 270:	322e3220 	andi	t6,s1,0x3220
+ 274:	30392e34 	andi	t9,at,0x2e34
+ 278:	Address 0x0000000000000278 is out of bounds.
+
+
+Disassembly of section .debug_abbrev:
+
+00000000 <.debug_abbrev>:
+   0:	10001101 	b	4408 <Keyboard_rightshift+0x43af>
+   4:	12011106 	beq	s0,at,4420 <Keyboard_rightshift+0x43c7>
+   8:	1b080301 	0x1b080301
+   c:	13082508 	beq	t8,t0,9430 <Keyboard_rightshift+0x93d7>
+  10:	00000005 	lsa	zero,zero,zero,0x1
+  14:	10001101 	b	441c <Keyboard_rightshift+0x43c3>
+  18:	12011106 	beq	s0,at,4434 <Keyboard_rightshift+0x43db>
+  1c:	1b080301 	0x1b080301
+  20:	13082508 	beq	t8,t0,9444 <Keyboard_rightshift+0x93eb>
+  24:	00000005 	lsa	zero,zero,zero,0x1
+  28:	10001101 	b	4430 <Keyboard_rightshift+0x43d7>
+  2c:	12011106 	beq	s0,at,4448 <Keyboard_rightshift+0x43ef>
+  30:	1b080301 	0x1b080301
+  34:	13082508 	beq	t8,t0,9458 <Keyboard_rightshift+0x93ff>
+  38:	00000005 	lsa	zero,zero,zero,0x1
+  3c:	10001101 	b	4444 <Keyboard_rightshift+0x43eb>
+  40:	12011106 	beq	s0,at,445c <Keyboard_rightshift+0x4403>
+  44:	1b080301 	0x1b080301
+  48:	13082508 	beq	t8,t0,946c <Keyboard_rightshift+0x9413>
+  4c:	00000005 	lsa	zero,zero,zero,0x1
+  50:	10001101 	b	4458 <Keyboard_rightshift+0x43ff>
+  54:	12011106 	beq	s0,at,4470 <Keyboard_rightshift+0x4417>
+  58:	1b080301 	0x1b080301
+  5c:	13082508 	beq	t8,t0,9480 <Keyboard_rightshift+0x9427>
+  60:	00000005 	lsa	zero,zero,zero,0x1
+
+Disassembly of section .debug_line:
+
+00000000 <.debug_line>:
+   0:	00000044 	0x44
+   4:	001d0002 	srl	zero,sp,0x0
+   8:	01010000 	0x1010000
+   c:	000d0efb 	0xd0efb
+  10:	01010101 	0x1010101
+  14:	01000000 	0x1000000
+  18:	00010000 	sll	zero,at,0x0
+  1c:	30747263 	andi	s4,v1,0x7263
+  20:	0000532e 	0x532e
+  24:	00000000 	nop
+  28:	01440205 	0x1440205
+  2c:	0f039fc0 	jal	c0e7f00 <__memory_size+0xc0c8700>
+  30:	84844c01 	lh	a0,19457(a0)
+  34:	4b848383 	c2	0x1848383
+  38:	4e4c8513 	c3	0x4c8513
+  3c:	4d4b4b4b 	0x4d4b4b4b
+  40:	024b8583 	0x24b8583
+  44:	01010008 	0x1010008
+  48:	00000082 	srl	zero,zero,0x2
+  4c:	001d0002 	srl	zero,sp,0x0
+  50:	01010000 	0x1010000
+  54:	000d0efb 	0xd0efb
+  58:	01010101 	0x1010101
+  5c:	01000000 	0x1000000
+  60:	00010000 	sll	zero,at,0x0
+  64:	746f6f62 	jalx	1bdbd88 <__memory_size+0x1bbc588>
+  68:	0000532e 	0x532e
+  6c:	00000000 	nop
+  70:	00000205 	0x205
+  74:	13039fc0 	beq	t8,v1,fffe7f78 <__entry+0x403e7f78>
+  78:	4d835101 	0x4d835101
+  7c:	4a0a034d 	c2	0xa034d
+  80:	4d4b4b4b 	0x4d4b4b4b
+  84:	4b4b4b4b 	c2	0x14b4b4b
+  88:	4b4d4b4b 	c2	0x14d4b4b
+  8c:	4c4b4b4b 	0x4c4b4b4b
+  90:	4b4b514b 	c2	0x14b514b
+  94:	4c4b4c4b 	0x4c4b4c4b
+  98:	4b4c4b4b 	c2	0x14c4b4b
+  9c:	4b4c4b4b 	c2	0x14c4b4b
+  a0:	4b4b4b4f 	c2	0x14b4b4f
+  a4:	4b4a0c03 	c2	0x14a0c03
+  a8:	834c4b4b 	lb	t4,19275(k0)
+  ac:	4b4b504b 	c2	0x14b504b
+  b0:	4c4b4c4b 	0x4c4b4c4b
+  b4:	4b4c4b4b 	c2	0x14c4b4b
+  b8:	4b4c4b4b 	c2	0x14c4b4b
+  bc:	4b4b4f4b 	c2	0x14b4f4b
+  c0:	4c834f4b 	0x4c834f4b
+  c4:	504e4b83 	beql	v0,t6,12ed4 <Keyboard_rightshift+0x12e7b>
+  c8:	0004024b 	0x4024b
+  cc:	00490101 	0x490101
+  d0:	00020000 	sll	zero,v0,0x0
+  d4:	00000023 	negu	zero,zero
+  d8:	0efb0101 	jal	bec0404 <__memory_size+0xbea0c04>
+  dc:	0101000d 	break	0x101
+  e0:	00000101 	0x101
+  e4:	00000100 	sll	zero,zero,0x4
+  e8:	78650001 	bmnzi.b	$w0,$w0,0x65
+  ec:	74706563 	jalx	1c1958c <__memory_size+0x1bf9d8c>
+  f0:	736e6f69 	0x736e6f69
+  f4:	0000532e 	0x532e
+  f8:	00000000 	nop
+  fc:	00000205 	0x205
+ 100:	2c038000 	sltiu	v1,zero,-32768
+ 104:	02838301 	0x2838301
+ 108:	83831770 	lb	v1,6000(gp)
+ 10c:	83177002 	lb	s7,28674(t8)
+ 110:	17700283 	bne	k1,s0,b20 <Keyboard_rightshift+0xac7>
+ 114:	08028383 	j	a0e0c <__memory_size+0x8160c>
+ 118:	33010100 	andi	at,t8,0x100
+ 11c:	02000000 	0x2000000
+ 120:	00001e00 	sll	v1,zero,0x18
+ 124:	fb010100 	sdc2	$1,256(t8)
+ 128:	01000d0e 	0x1000d0e
+ 12c:	00010101 	0x10101
+ 130:	00010000 	sll	zero,at,0x0
+ 134:	64000100 	0x64000100
+ 138:	796d6d75 	0x796d6d75
+ 13c:	0000532e 	0x532e
+ 140:	00000000 	nop
+ 144:	02000205 	0x2000205
+ 148:	3a038000 	xori	v1,s0,0x8000
+ 14c:	00040201 	0x40201
+ 150:	012a0101 	0x12a0101
+ 154:	00020000 	sll	zero,v0,0x0
+ 158:	0000001d 	0x1d
+ 15c:	0efb0101 	jal	bec0404 <__memory_size+0xbea0c04>
+ 160:	0101000d 	break	0x101
+ 164:	00000101 	0x101
+ 168:	00000100 	sll	zero,zero,0x4
+ 16c:	616d0001 	0x616d0001
+ 170:	532e6e69 	beql	t9,t6,1bb18 <Keyboard_rightshift+0x1babf>
+ 174:	00000000 	nop
+ 178:	02050000 	0x2050000
+ 17c:	80000204 	lb	zero,516(zero)
+ 180:	01018403 	0x1018403
+ 184:	834b844b 	lb	t3,-31669(k0)
+ 188:	834b834b 	lb	t3,-31925(k0)
+ 18c:	834b834b 	lb	t3,-31925(k0)
+ 190:	4c83834b 	0x4c83834b
+ 194:	4b4b4b83 	c2	0x14b4b83
+ 198:	83834b83 	lb	v1,19331(gp)
+ 19c:	4b4b834c 	c2	0x14b834c
+ 1a0:	4c83834b 	0x4c83834b
+ 1a4:	4b4b4b83 	c2	0x14b4b83
+ 1a8:	4b4c8383 	c2	0x14c8383
+ 1ac:	4b4c834b 	c2	0x14c834b
+ 1b0:	4b4c834b 	c2	0x14c834b
+ 1b4:	83838383 	lb	v1,-31869(gp)
+ 1b8:	4b4b4b4b 	c2	0x14b4b4b
+ 1bc:	4c831383 	0x4c831383
+ 1c0:	8413834b 	lh	s3,-31925(zero)
+ 1c4:	4b838784 	c2	0x1838784
+ 1c8:	4b834b4b 	c2	0x1834b4b
+ 1cc:	4b834b83 	c2	0x1834b83
+ 1d0:	83841383 	lb	a0,4995(gp)
+ 1d4:	4b4c8384 	c2	0x14c8384
+ 1d8:	4c831383 	0x4c831383
+ 1dc:	83144b83 	lb	s4,19331(t8)
+ 1e0:	4b834b4b 	c2	0x1834b4b
+ 1e4:	4b834b83 	c2	0x1834b83
+ 1e8:	4c831383 	0x4c831383
+ 1ec:	834c8383 	lb	t4,-31869(k0)
+ 1f0:	13834b4c 	beq	gp,v1,12f24 <Keyboard_rightshift+0x12ecb>
+ 1f4:	14834c83 	bne	a0,v1,13404 <Keyboard_rightshift+0x133ab>
+ 1f8:	13834f83 	beq	gp,v1,14008 <Keyboard_rightshift+0x13faf>
+ 1fc:	13834f83 	beq	gp,v1,1400c <Keyboard_rightshift+0x13fb3>
+ 200:	13834f83 	beq	gp,v1,14010 <Keyboard_rightshift+0x13fb7>
+ 204:	834b4f83 	lb	t3,20355(k0)
+ 208:	834b834b 	lb	t3,-31925(k0)
+ 20c:	1384834b 	beq	gp,a0,fffe0f3c <__entry+0x403e0f3c>
+ 210:	13841384 	beq	gp,a0,5024 <Keyboard_rightshift+0x4fcb>
+ 214:	83891384 	lb	t1,4996(gp)
+ 218:	13834b4b 	beq	gp,v1,12f48 <Keyboard_rightshift+0x12eef>
+ 21c:	4b871384 	c2	0x1871384
+ 220:	4b834b83 	c2	0x1834b83
+ 224:	84834b83 	lh	v1,19331(a0)
+ 228:	84138413 	lh	s3,-31725(zero)
+ 22c:	89138413 	lwl	s3,-31725(t0)
+ 230:	834b4b83 	lb	t3,19331(k0)
+ 234:	85138413 	lh	s3,-31725(t0)
+ 238:	4b4b4b83 	c2	0x14b4b83
+ 23c:	854b4b83 	lh	t3,19331(t2)
+ 240:	4b838383 	c2	0x1838383
+ 244:	834b8383 	lb	t3,-31869(k0)
+ 248:	4b4b8385 	c2	0x14b8385
+ 24c:	8385834b 	lb	a1,-31925(gp)
+ 250:	834b4b4b 	lb	t3,19275(k0)
+ 254:	83844b4b 	lb	a0,19275(gp)
+ 258:	834b8383 	lb	t3,-31869(k0)
+ 25c:	85834b83 	lh	v1,19331(t4)
+ 260:	4b4b4b83 	c2	0x14b4b83
+ 264:	834b8583 	lb	t3,-31357(k0)
+ 268:	83838383 	lb	v1,-31869(gp)
+ 26c:	4b83834b 	c2	0x183834b
+ 270:	83834b85 	lb	v1,19333(gp)
+ 274:	4b838383 	c2	0x1838383
+ 278:	024b8383 	0x24b8383
+ 27c:	01010008 	0x1010008
+
+Disassembly of section .pdr:
+
+00000000 <.pdr>:
+   0:	9fc00144 	0x9fc00144
+	...
+  20:	9fc00000 	0x9fc00000
+	...
+  40:	80000000 	lb	zero,0(zero)
+	...
+  60:	80000200 	lb	zero,512(zero)
+	...
+  80:	80000200 	lb	zero,512(zero)
+	...
+  a0:	80000200 	lb	zero,512(zero)
+	...
+  c0:	80000200 	lb	zero,512(zero)
+	...
+  e0:	80000200 	lb	zero,512(zero)
+	...
+
+Disassembly of section .gnu.attributes:
+
+00000000 <.gnu.attributes>:
+   0:	00000f41 	0xf41
+   4:	756e6700 	jalx	5b99c00 <__memory_size+0x5b7a400>
+   8:	00070100 	sll	zero,a3,0x4
+   c:	03040000 	0x3040000
