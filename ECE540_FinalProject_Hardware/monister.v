@@ -23,20 +23,20 @@
 
 module monister(     
 	input [11:0] pixel_column,     //pixel_column signal from dtg module
-    input [11:0] pixel_row,        //pixel_row signal from dtg module
+        input [11:0] pixel_row,        //pixel_row signal from dtg module
 	input [11:0] mon_addr_r,       //the row address of monster location      
 	input [11:0] mon_addr_c,       //the col address of monster location
 	input [2:0]	 mon_ori,          //the orientation of the monster 
-    input clock,
-    input reset,
-    input biu,                      // shoot bullent shoot signal
-    output reg [1:0] mon,           // the monster icon flag
-    output reg [11:0]mon_c,         // 12-bit the monster icon color (RGB  CODE) 
+        input clock,
+        input reset,
+        input biu,                      // shoot bullent shoot signal
+        output reg [1:0] mon,           // the monster icon flag
+        output reg [11:0]mon_c,         // 12-bit the monster icon color (RGB  CODE) 
 	input [1:0]icon_green, icon_red,// green tank icon flag and red tank icon
 	input [1:0] world_pixel,        //world map pixel color
 	output reg mon_b,               //monster's bullet flag
-    output reg [11:0]mon_b_c,       //12-bit monster's bullet color code (RGB CODE)
-    output reg burst_g,burst_r      //brust_g is to show the green tank is hit by the monster; brust_r is to show the red tank is hit by the monster	
+        output reg [11:0]mon_b_c,       //12-bit monster's bullet color code (RGB CODE)
+        output reg burst_g,burst_r      //brust_g is to show the green tank is hit by the monster; brust_r is to show the red tank is hit by the monster	
 );
  wire [1:0] image_rom ;
  reg [4:0] addr_r;
